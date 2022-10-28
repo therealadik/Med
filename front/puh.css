@@ -1,0 +1,231 @@
+@CHARSET "UTF-8";
+
+/* Обнуление отступов и полей для всех тегов*/
+body, table, tr, td, div, ul, li, img, a, h1, th, input, form
+	{
+      margin: 0px;
+      padding: 0px;
+	  vertical-align: top;          		 
+	}
+	
+body 
+{
+	/*Фон страницы*/
+    background-color: white;
+    background-image: url('img/fon.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left;
+
+    /*Размеры*/
+    width:100%;
+    height:100%;
+}
+
+#vmenu
+	{      
+      /*Размеры*/
+      width:980px;
+      height:38px;
+      
+	  /*Фон меню*/
+      background-image: url('img/menu.png');
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-position: top left;   
+                          		
+	}
+
+#tab_centr
+	{
+	  /*Фон таблицы*/	  
+      background-image: url('img/centr.png');
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-position: top left;
+    }
+
+/*Верхнее горизонтальное меню*/
+#vmenu ul
+{
+	list-style: none;
+}
+
+/*Пункты меню*/
+#vmenu li
+{
+	float: left;
+	padding-top: 5px;
+	padding-left: 70px;		
+}
+
+/*Центральная часть с белым фоном*/
+#sheet
+	{
+	   width: 550px;
+	   padding: 15px;	   	    
+	}	
+
+/*Верхняя часть поля с белым фоном*/
+#sheet1
+	{
+	   width: 550px;
+	   height: 10px;
+	   background: url('img/sheet1.png') left top no-repeat;	   
+	}
+
+/*Средняя часть поля с белым фоном*/
+#sheet2
+	{
+	   width: 550px;
+	   height: auto;
+	   background: url('img/sheet2.png') left top repeat-y;
+	   padding: 0px 10px;  	   	   	   
+	}
+
+/*Нижняя часть поля с белым фоном*/
+#sheet3
+	{
+	   width: 550px;
+	   height: 10px;
+	   background: url('img/sheet3.png') left top no-repeat;
+	}
+	
+/*Фргамент с текстом описания товара*/
+.div_opisan
+	{		
+	    text-decoration: none;
+	    font-size: 18px;
+	    font-family: verdana, arial, serif;
+	    font-style: normal;
+	    font-weight: normal;
+	    line-height: 22px;
+	    color: #000066;	    
+	    width: 530px;
+	    
+	    white-space: normal;
+	    text-align: justify;		    
+	}	
+	
+/*Заголовок описания товара*/	
+.h1_opisan
+	{			
+	    width: 530px;	
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 25px;
+	    font-family: verdana, arial, serif;
+	    font-style: italic;
+	    font-weight: bold;
+	    line-height: 40px;
+	    color: red;	
+	}			
+
+/*Блок левой боковой части*/
+.left_b
+	{
+	   padding-top: 10px;
+	   padding-bottom: 20px;
+	   width: 200px;
+	}	
+	
+/*Картинка в левой боковой части*/	
+.left_b img
+	{
+	   border: #000066 6px double;
+	}
+	
+/*Заголовок в левой боковой части*/			
+.left_b h1
+	{
+	    width: 200px;
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 30px;
+	    font-family: verdana, arial, serif;
+	    font-style: normal;
+	    font-weight: bold;
+	    line-height: 50px;
+	    color: #000066;	    	    		   
+	}
+	
+/*При наведении мыши на заголовок*/	
+.left_b h1:HOVER
+	{
+	   color: red;
+	}	
+
+/*При наведении мыши на изображение*/
+.left_b img:HOVER
+	{
+	   border: red 6px double;
+	}
+	
+/*Правая боковой части*/
+#right_b
+	{	   
+	   padding-top: 10px;
+	   padding-bottom: 20px;	   
+	   width: 200px;	   
+	}
+
+/*Заголовок в правой боковой части*/
+#right_b h1
+	{
+	    text-align: center;
+	    white-space: nowrap;
+	    width: 200px;	
+	    text-decoration: none;
+	    font-size: 20px;
+	    font-family: verdana, arial, serif;
+	    font-style: normal;
+	    font-weight: bold;
+	    line-height: 30px;
+	    color: white;	    	    		   
+	}
+
+/*Свойства для текста в таблице заказов*/
+#zakaz td, #zakaz th, #zakaz input
+	{
+	    white-space: nowrap;	
+	    text-decoration: none;
+	    font-size: 15px;
+	    font-family: verdana, arial, serif;
+	    font-style: normal;
+	    line-height: 15px;
+	    color: #000066;	    	    		   		
+	} 
+	
+/*Свойство для заголовка таблицы заказов*/
+#zakaz th
+	{
+	    font-weight: bold;
+	    color: #006600;
+	}	
+
+/*Свойство для строки таблицы заказов*/
+#zakaz tr
+	{
+	   height: 35px;
+	}
+			
+/*Свойства для заголовков и ячеек таблицы заказов*/		
+#zakaz td, #zakaz th 
+	{
+	   width: 260px;
+	   vertical-align: middle;
+	   text-align: center;
+	   border: #000066 1px solid;
+	}	
+	
+/*Свойства для тегов input в таблице заказов*/
+#zakaz input 
+	{
+	   font-weight:bold;
+	   width: 200px;
+	   height: 25px;
+	   border: #006600 1px solid;
+	   background-color: white;
+	   padding: 3px;
+	   color: red;
+    }	

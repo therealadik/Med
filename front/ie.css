@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+/*Верхняя и нижнияя часть поля с белым фоном*/
+#sheet1, #sheet3 
+	{
+	   width: 0px;
+	   height: 0px;
+	   background: none;	   
+	}
+
+/*Средняя часть поля с белым фоном*/
+#sheet2
+	{
+	   border-top: #000066 1px solid;  	   	   	   
+	   border-bottom: #000066 1px solid;
+	}
